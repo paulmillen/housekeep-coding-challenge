@@ -1,0 +1,19 @@
+{
+  "name": "housekeep-coding-challenge",
+  "version": "1.0.0",
+  "description": "Coding challenge for Housekeep",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulmillen/housekeep-coding-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulmillen/housekeep-coding-challenge/issues"
+  },
+  "homepage": "https://github.com/paulmillen/housekeep-coding-challenge#readme"
+}
