@@ -7,7 +7,8 @@ describe('BookingController', () => {
     ctrl = $controller('BookingController');
   }));
 
-  it('initialises with a day', () => {
-    expect(ctrl.day).toEqual("Day")
+  it('initialises with an array of days', () => {
+    let days = ['Monday', 'Tuesday']
+    expect(ctrl.days).toEqual(days)
   })
 });

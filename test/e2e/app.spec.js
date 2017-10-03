@@ -1,14 +1,8 @@
 describe("app", () => {
-  it("should say 'Hello World' on the page", () => {
+  it('has multiple days', () => {
     browser.get('/');
-    expect($$("p").first().getText()).toEqual("Hello World")
+    const days = $$('#days p');
+    expect(days.first().getText()).toEqual('Monday')
+    expect(days.last().getText()).toEqual('Tuesday')
   });
 });
-
-describe('Booking', () => {
-  it('has a day', () => {
-    browser.get('/');
-    const day = $('#day');
-    expect(day.getText()).toEqual('Day')
-  })
-})

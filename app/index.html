@@ -8,8 +8,10 @@
     <script src="js/controllers/BookingController.js"></script>
   </head>
   <body>
-    <div id="day" ng-controller='BookingController as controller'>
-      {{ controller.day }}
+    <div id="days" ng-controller='BookingController as controller'>
+      <p ng-repeat="day in controller.days">
+        {{ day }}
+      </p>
     </div>
   </body>
 </html>
