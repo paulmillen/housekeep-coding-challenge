@@ -1,0 +1,17 @@
+{
+  "name": "housekeep-coding-challenge",
+  "description": "Coding challenge for Housekeep",
+  "main": "index.js",
+  "authors": [
+    "paulmillen <pwmillen@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/paulmillen/housekeep-coding-challenge",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
