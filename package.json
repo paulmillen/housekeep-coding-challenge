@@ -4,7 +4,8 @@
   "description": "Coding challenge for Housekeep",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "cd app && ../node_modules/http-server/bin/http-server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/paulmillen/housekeep-coding-challenge/issues"
   },
-  "homepage": "https://github.com/paulmillen/housekeep-coding-challenge#readme"
+  "homepage": "https://github.com/paulmillen/housekeep-coding-challenge#readme",
+  "dependencies": {
+    "http-server": "^0.10.0"
+  }
 }
