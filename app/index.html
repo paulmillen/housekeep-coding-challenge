@@ -6,11 +6,12 @@
     <script src="bower_components/angular/angular.js"></script>
     <script src="js/app.js"></script>
     <script src="js/controllers/BookingController.js"></script>
+    <script src="js/services/BookingService.js"></script>
   </head>
   <body>
     <div id="days" ng-controller='BookingController as controller'>
-      <p ng-repeat="day in controller.days">
-        {{ day.name }}
+      <p ng-repeat="date in controller.days">
+        {{ date.day }}
       </p>
     </div>
   </body>
