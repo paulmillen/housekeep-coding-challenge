@@ -8,7 +8,7 @@ describe('BookingController', () => {
   }));
 
   it('initialises with an array of days', () => {
-    let days = ['Monday', 'Tuesday']
+    let days = [{name: 'Monday'}, {name: 'Tuesday'}]
     expect(ctrl.days).toEqual(days)
   })
 });

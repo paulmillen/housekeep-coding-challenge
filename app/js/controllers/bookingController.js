@@ -1,3 +1,3 @@
 bookingApp.controller('BookingController', [function() {
-  this.days = ['Monday', 'Tuesday']
+  this.days = [{name:'Monday'}, {name:'Tuesday'}]
 }])
