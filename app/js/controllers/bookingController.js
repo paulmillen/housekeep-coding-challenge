@@ -1,3 +1,3 @@
-bookingApp.controller('BookingController', ['ApiService', function(ApiService) {
-  this.days = ApiService.getAll();
+bookingApp.controller('BookingController', ['BookingService', function(BookingService) {
+  this.days = BookingService.getAll();
 }]);
