@@ -1,4 +1,4 @@
-bookingApp.controller('BookingController', ['$scope', '$http', 'BookingService', function($scope, $http, BookingService) {
+bookingApp.controller('BookingController', ['$scope', 'BookingService', function($scope, BookingService) {
 
   BookingService.getAll(function(response) {
     $scope.week = response.data;
@@ -15,10 +15,9 @@ bookingApp.controller('BookingController', ['$scope', '$http', 'BookingService',
    };
 
    $scope.submit = function() {
-     $http.post("https://private-anon-2e5e7d446d-housekeepavailability.apiary-mock.com/book/", $scope.booking)
-     .then(function(response){
-        $scope.confirmation = response.data;
-      })
-    };
+    BookingService.returnBooking(function(response) {
+      $scope.confirmation = response.data;
+    }, $scope.booking);
+  };
 
 }]);

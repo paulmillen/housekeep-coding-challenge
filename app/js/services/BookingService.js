@@ -7,4 +7,12 @@ bookingApp.service('BookingService', ['$http', function($http) {
       callback(response);
     });
   };
+
+  self.returnBooking = function(callback, booking) {
+    $http.post("https://private-anon-2e5e7d446d-housekeepavailability.apiary-mock.com/book/", booking)
+    .then(function(response){
+       callback(response);
+    });
+  };
+
 }]);
