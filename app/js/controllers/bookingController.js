@@ -5,9 +5,9 @@ bookingApp.controller('BookingController', ['$scope','BookingService', function(
    });
 
    $scope.booking = {
-     day: "",
+     day: "Select an Empty Slot",
      startTime: {
-       start: "",
+       start: "Select an Empty Slot",
        end: ""
      },
      visitDuration: 1,

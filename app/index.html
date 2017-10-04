@@ -10,11 +10,15 @@
   </head>
   <body>
     <div ng-controller='BookingController'>
-      {{ booking.visitDuration }}
+      <div>
+        Hours of Cleaning: <input type="text" ng-model='booking.visitDuration'>
+        Date: {{ booking.day }}
+        Start: {{ booking.startTime.start }}
+      <div>
       <div ng-repeat="days in week">
         {{ days.day }}
         <div ng-repeat="startTime in days.startTimes | filter: { possible:true }">
-          <button type="button" name="button">
+          <button type="button" name="button" ng-click='booking.startTime.start=startTime.start'>
             {{ startTime.start }} - {{ startTime.end }}
           </button>
         </div>
