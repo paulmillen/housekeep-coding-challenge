@@ -11,4 +11,11 @@ describe("app", () => {
     expect(times.first().getText()).toEqual('08:00:00 - 08:30:00')
     expect(times.last().getText()).toEqual('14:00:00 - 15:00:00')
   });
+  it('displays a confirmation when booking is made', () => {
+    browser.get('/');
+    $('button').click()
+    $('#submit').click()
+    const confirmation = $('#confirmation')
+    expect(confirmation.getText()).toEqual('Booking Confirmed! Your cleaner is Ed Harris')
+  });
 });
