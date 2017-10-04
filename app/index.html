@@ -9,10 +9,9 @@
     <script src="js/services/BookingService.js"></script>
   </head>
   <body>
-    <div id="days" ng-controller='BookingController as controller'>
-      <p ng-repeat="date in controller.days">
+    <div id="days" ng-controller='BookingController'>
+      <p ng-repeat="date in week">
         {{ date.day }}
-        {{ date.startTimes }}
       </p>
     </div>
   </body>
