@@ -1,6 +1,6 @@
 ## House Keep Front End Challenge
 
-A web app to retrive and return booking information from an API.
+A web app to retrieve and return booking information from an API.
 
 ```
 Requirements:
@@ -46,7 +46,7 @@ To run unit tests:
 
 Testing:
 
-E2e is OK, but could be more extensive. eg testing to ensure unavailable times are not displayed.  
+E2e could be more extensive, eg testing to ensure unavailable times are not displayed.  
 Unit testing is minimal.  I would extend by writing additional tests for the service.
 TDD was hampered by focusing on learning the framework.
 
@@ -56,4 +56,4 @@ Code kept very basic.  Perhaps would have been cleaner to delegate response hand
 
 Front end:
 
-Would extend with more interesting styling, rather than basic Bootstrap - drop-downs for the available times for example.  The app is not properly responsive so would look to implement this as well.   
+Would extend with more interesting styling, rather than basic Bootstrap - drop-downs for the available times for example.  The app is not properly responsive so would look to implement this as well. 
