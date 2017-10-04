@@ -40,7 +40,7 @@ To run e2e tests:
 `$ npm run protractor test/protractor.conf.js`
 
 To run unit tests:  
-`$ npm karma start test/karma.conf.js`
+`$ npm karma start test/karma.config.js`
 
 ### Evaluation
 
