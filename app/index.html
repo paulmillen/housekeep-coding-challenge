@@ -13,10 +13,10 @@
     <div class='container' ng-controller='BookingController'>
       <h2 class='m-4'> Available Dates: </h2>
       <div class='d-flex justify-content-center'>
-        <div ng-repeat="days in week" class='d-flex w-25 flex-column justify-content-start align-items-center'>
-          {{ days.day }}
-          <div class='' ng-repeat="startTime in days.startTimes | filter: { possible:true }">
-            <button type="button" name="button" class='' ng-click='booking.startTime.start = startTime.start; booking.startTime.end = startTime.end; booking.day = days.day'>
+        <div id='days' ng-repeat="days in week" class='d-flex w-25 flex-column justify-content-start align-items-center'>
+          <p>{{ days.day }}</p>
+          <div class='times' ng-repeat="startTime in days.startTimes | filter: { possible:true }">
+            <button type="button" name="button" class='btn btn-primary btn-sm mt-1' ng-click='booking.startTime.start = startTime.start; booking.startTime.end = startTime.end; booking.day = days.day'>
               {{ startTime.start }} - {{ startTime.end }}
             </button>
           </div>
@@ -27,7 +27,7 @@
           <p><label>Hours of Cleaning:</label> <input type="text" ng-model='booking.visitDuration'></p>
           <p>Date: {{ booking.day }}</p>
           <p>Start Timeslot: {{ booking.startTime.start }} - {{ booking.startTime.end }} </p>
-          <button type="submit" name="submit" ng-click='submit()'>Book!</button>
+          <button type="submit" name="submit" class= 'btn btn-primary' ng-click='submit()'>Book!</button>
         </div>
       </div>
       <div ng-if='confirmation.success'>
