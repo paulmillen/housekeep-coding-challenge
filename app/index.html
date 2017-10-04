@@ -10,9 +10,12 @@
   </head>
   <body>
     <div id="days" ng-controller='BookingController'>
-      <p ng-repeat="date in week">
-        {{ date.day }}
-      </p>
+      <div ng-repeat="days in week">
+        {{ days.day }}
+        <div ng-repeat="startTime in days.startTimes | filter: { possible:true }">
+          {{ startTime }}
+        </div>
+      </div>
     </div>
   </body>
 </html>
