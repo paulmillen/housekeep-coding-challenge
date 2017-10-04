@@ -7,7 +7,7 @@ bookingApp.controller('BookingController', ['$scope', '$http', 'BookingService',
    $scope.booking = {
      day: "None Selected",
      startTime: {
-       start: "None Selected",
+       start: "",
        end: ""
      },
      visitDuration: 1,
