@@ -1,13 +1,13 @@
-bookingApp.controller('BookingController', ['$scope','BookingService', function($scope, BookingService) {
+bookingApp.controller('BookingController', ['$scope', '$http', 'BookingService', function($scope, $http, BookingService) {
 
   BookingService.getAll(function(response) {
     $scope.week = response.data;
    });
 
    $scope.booking = {
-     day: "Select an Empty Slot",
+     day: "None Selected",
      startTime: {
-       start: "Select an Empty Slot",
+       start: "None Selected",
        end: ""
      },
      visitDuration: 1,
