@@ -18,13 +18,10 @@
       <div ng-repeat="days in week">
         {{ days.day }}
         <div ng-repeat="startTime in days.startTimes | filter: { possible:true }">
-          <button type="button" name="button" ng-click='booking.startTime.start=startTime.start'>
+          <button type="button" name="button" ng-click='booking.startTime.start = startTime.start; booking.day = days.day'>
             {{ startTime.start }} - {{ startTime.end }}
           </button>
         </div>
-      </div>
-      <div>
-
       </div>
     </div>
   </body>
