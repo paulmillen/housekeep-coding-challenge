@@ -16,8 +16,8 @@
         Start: {{ booking.startTime.start }}
         <button type="submit" name="submit" ng-click='submit()'>Book!</button>
       </div>
-      <div>
-        {{ confirmation }}
+      <div ng-if='confirmation.success'>
+        Booking Confirmed! Your cleaner is {{ confirmation.cleaner.name }}
       </div>
       <div ng-repeat="days in week">
         {{ days.day }}
