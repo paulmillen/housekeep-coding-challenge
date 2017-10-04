@@ -1,10 +1,10 @@
 describe('BookingController', function() {
   beforeEach(module('bookingApp'));
 
-  var ctrl = 'test';
+  var ctrl, scope;
 
   beforeEach(inject(function($rootScope, $controller) {
-    var scope = $rootScope.$new();
+    scope = $rootScope.$new();
     ctrl = $controller('BookingController', { $scope: scope });
   }));
 
