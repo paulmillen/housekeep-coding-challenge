@@ -9,12 +9,18 @@
     <script src="js/services/BookingService.js"></script>
   </head>
   <body>
-    <div id="days" ng-controller='BookingController'>
+    <div ng-controller='BookingController'>
+      {{ booking.visitDuration }}
       <div ng-repeat="days in week">
         {{ days.day }}
         <div ng-repeat="startTime in days.startTimes | filter: { possible:true }">
-          {{ startTime }}
+          <button type="button" name="button">
+            {{ startTime.start }} - {{ startTime.end }}
+          </button>
         </div>
+      </div>
+      <div>
+
       </div>
     </div>
   </body>
