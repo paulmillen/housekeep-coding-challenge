@@ -26,6 +26,8 @@ http-server
 Clone this repo.
 
 `$ npm install`  
+`$ npm install bower`  
+`$ bower install angular`  
 `$ npm start` to run local host on 8080.
 
 ### Testing
